@@ -80,3 +80,18 @@ CREATE TABLE transportadora (
     email VARCHAR(100) NOT NULL,
     PRIMARY KEY (id_transportadora)
 );
+
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_0 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
+;
+
+ALTER TABLE produto ADD CONSTRAINT FK_produto_0 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
+;
+
+ALTER TABLE avaliacao ADD CONSTRAINT FK_avaliacao_0 FOREIGN KEY (id_produto) REFERENCES produto (id_produto)
+;
+
+ALTER TABLE avaliacao ADD CONSTRAINT FK_avaliacao_1 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
+;
+
+ALTER TABLE categoria ADD CONSTRAINT FK_categoria_0 FOREIGN KEY (id_produto) REFERENCES produto (id_produto)
+;
