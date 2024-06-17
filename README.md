@@ -8,7 +8,7 @@ Link: [Página do script no Oracle Live SQL](https://livesql.oracle.com/apex/liv
 
 ## Sobre o Projeto
 
-Este projeto trata da implementação de uma estrutura de banco de dados tanto em modelagem relacional utilizando o banco de dados Oracle, quanto em modelagem não-relacional usando o banco de dados MongoDB. O projeto deve ser realizado em equipes de até 3 pessoas e atender aos requisitos estabelecidos neste enunciado.
+Este projeto trata da implementação de uma estrutura de banco de dados tanto em modelagem relacional utilizando o banco de dados Oracle, quanto em modelagem não-relacional usando o banco de dados MongoDB
 
 Adotaremos o método de Aprendizagem Baseado em Projetos (Project Based Learning - PBL), focando no conhecimento teórico e técnico a partir do desenvolvimento de um projeto na prática.
 
