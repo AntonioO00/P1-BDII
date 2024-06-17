@@ -4,7 +4,7 @@
 Link: [Página do script no Oracle Live SQL](https://livesql.oracle.com/apex/livesql/s/bvybm472zmmtlfm9kjaokgpaw)
 
 ## Base  Conceitual do Banco de Dados
-![Texto Alternativo](Extras/Conceitual.png)
+![Texto Alternativo](Extras/Conceitual.jpg)
 
 ## Sobre o Projeto
 
