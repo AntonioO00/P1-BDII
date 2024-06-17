@@ -52,6 +52,11 @@ FROM produto pr
 LEFT JOIN avaliacao av ON pr.id_produto = av.id_produto
 GROUP BY pr.nome;
 
+-- Consulta 4: Média das Notas por Produto
+SELECT pr.nome AS produto_nome, AVG(av.nota) AS media_notas
+FROM produto pr
+INNER JOIN avaliacao av ON pr.id_produto = av.id_produto
+GROUP BY pr.nome;
 
 
 
