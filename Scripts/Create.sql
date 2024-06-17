@@ -1,6 +1,8 @@
 REM Script: T1_BD2
 REM Trabalho 1 prático de banco de dados, foram inseridos dados na tabela, criados pelo chatgpt sobre o mundo de Bleach
+-- CRIAÇÃO DE TABELAS
 
+-- Criação de tabelas
 CREATE TABLE cliente (
     id_cliente NUMERIC(5) NOT NULL,
     nome VARCHAR(100) NOT NULL,
@@ -9,6 +11,7 @@ CREATE TABLE cliente (
     PRIMARY KEY (id_cliente)
 );
 
+-- Criação de tabelas
 CREATE TABLE endereco (
     id_endereco NUMERIC(5) NOT NULL,
     id_cliente NUMERIC(5) NOT NULL,
@@ -19,6 +22,7 @@ CREATE TABLE endereco (
     FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
 );
 
+-- Criação de tabelas
 CREATE TABLE pedido (
     id_pedido NUMERIC(5) NOT NULL,
     forma_pgto VARCHAR(30) NOT NULL,
@@ -27,6 +31,7 @@ CREATE TABLE pedido (
     PRIMARY KEY (id_pedido)
 );
 
+-- Criação de tabelas
 CREATE TABLE produto (
     id_produto NUMERIC(5) NOT NULL,
     nome VARCHAR(100) NOT NULL,
@@ -36,6 +41,7 @@ CREATE TABLE produto (
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
 );
 
+-- Criação de tabelas
 CREATE TABLE avaliacao (
     id_avaliacao NUMERIC(5) NOT NULL,
     id_produto NUMERIC(5) NOT NULL,
@@ -47,6 +53,7 @@ CREATE TABLE avaliacao (
     FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
 );
 
+-- Criação de tabelas
 CREATE TABLE categoria (
     id_categoria NUMERIC(5) NOT NULL,
     id_produto NUMERIC(5) NOT NULL,
@@ -55,6 +62,7 @@ CREATE TABLE categoria (
     FOREIGN KEY (id_produto) REFERENCES produto (id_produto)
 );
 
+-- Criação de tabelas
 CREATE TABLE item (
     id_item NUMERIC(5) NOT NULL,
     id_pedido NUMERIC(5) NOT NULL,
@@ -65,6 +73,7 @@ CREATE TABLE item (
     FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido)
 );
 
+-- Criação de tabelas
 CREATE TABLE transportadora (
     id_transportadora NUMERIC(5) NOT NULL,
     nome VARCHAR(100) NOT NULL,
