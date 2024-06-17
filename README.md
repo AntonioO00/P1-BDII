@@ -1,4 +1,8 @@
 # Projeto Aplicado de Banco de Dados
+# Modelo fisíco testado feito e testado no Oracle Live SQL
+Link: [Página do script no Oracle Live SQL](https://livesql.oracle.com/apex/livesql/s/bvybm472zmmtlfm9kjaokgpaw)
+
+
 
 ## Sobre o Projeto
 
